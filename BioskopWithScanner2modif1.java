@@ -35,12 +35,16 @@ public class BioskopWithScanner2modif1 {
                     kolom = sc.nextInt();
                     sc.nextLine();
 
-                    if ( baris >= 1 && baris <= 4 && kolom >= 1 && kolom <= 2) {
-                        penonton[baris - 1][kolom - 1] = nama;
+                    if (baris >= 1 && baris <= 4 && kolom >= 1 && kolom <= 2) {
+                        if (penonton[baris - 1][kolom - 1] == null) {
+                            penonton[baris - 1][kolom - 1] = nama;
+                        } else {
+                            System.out.println("Kursi sudah terisi, silakan pilih kursi lain");
+                        }
                     } else {
                         System.out.println("Baris atau kolom kursi tidak tersedia.");
                     }
-                    
+
                     System.out.print("Input penonton lainnya? (y/n): ");
                     next = sc.nextLine();
                     if (next.equalsIgnoreCase("n")) {
