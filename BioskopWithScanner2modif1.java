@@ -39,7 +39,7 @@ public class BioskopWithScanner2modif1 {
                         if (penonton[baris - 1][kolom - 1] == null) {
                             penonton[baris - 1][kolom - 1] = nama;
                         } else {
-                            System.out.println("Kursi sudah terisi, silakan pilih kursi lain");
+                            System.out.println("Kursi sudah terisi, silakan pilih kursi lain.");
                         }
                     } else {
                         System.out.println("Baris atau kolom kursi tidak tersedia.");
@@ -56,7 +56,8 @@ public class BioskopWithScanner2modif1 {
                 System.out.println("\n----- DAFTAR PENONTON BIOSKOP -----");
                 for (int i = 0; i < penonton.length; i++) {
                     for (int j = 0; j < penonton[i].length; j++) {
-                        System.out.print(penonton[i][j] + "\t");
+                        String namaPenonton = penonton[i][j] != null ? penonton[i][j] : "***";
+                        System.out.print(namaPenonton + "\t");
                     }
                     System.out.println();
                 }
