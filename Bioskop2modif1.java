@@ -15,8 +15,7 @@ public class Bioskop2modif1 {
         System.out.printf("%s \t %s\n", penonton[2][0], penonton[2][1]);
         System.out.printf("%s \t %s\n", penonton[3][0], penonton[3][1]);
         
-        System.err.println(penonton.length);
-        
+        System.out.println(penonton.length);
         for (int i = 0; i < penonton.length; i++) {
             System.out.println("Panjang baris ke-" + (i+1) + ": " + penonton[i].length);
         }
