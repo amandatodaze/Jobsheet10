@@ -19,5 +19,9 @@ public class Bioskop2modif1 {
         for (String[] barisPenonton : penonton) {
             System.out.println("Panjang baris ke: " + barisPenonton.length);
         }
+        System.out.println("Penonton pada baris ke-3: ");
+        for (int i = 0; i < penonton[2].length; i++) {
+            System.out.println(penonton[2][i]);
+        }
     }
 }
